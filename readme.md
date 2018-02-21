@@ -18,6 +18,7 @@ but can be replaced with other versions as needed:
     ```wget http://initd.org/psycopg/tarballs/PSYCOPG-2-7/psycopg2-2.7.4.tar.gz .```
 
 2. Unpack both archives:
+  
     ``` tar -xvzf /postgresql-10.2.tar.gz```
 
     ```tar -xvzf /psycopg2-2.7.4.tar.gz```
@@ -27,7 +28,7 @@ but can be replaced with other versions as needed:
 
     ```cd postgresql-10.2```
 
-    ```export POST_SRC=`pwd`
+    ```export POST_SRC=`pwd` ```
 
 Run the following commands:
 
