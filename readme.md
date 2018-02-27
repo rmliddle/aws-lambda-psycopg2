@@ -34,7 +34,9 @@ Run the following commands:
 
     ``` ./configure --prefix $POST_SRC --without-readline --without-zlib ```
 
+
     ```make```
+
 
     ```make install```
 
