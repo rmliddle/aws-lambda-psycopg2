@@ -19,26 +19,41 @@ but can be replaced with other versions as needed:
 
 2. Unpack both archives:
   
-    ``` tar -xvzf /postgresql-10.2.tar.gz```
+    ``` 
+        tar -xvzf /postgresql-10.2.tar.gz
+    ```
 
-    ```tar -xvzf /psycopg2-2.7.4.tar.gz```
+    ```
+        tar -xvzf /psycopg2-2.7.4.tar.gz
+    ```
 
 
 3. Move into the postgres source directory:
 
-    ```cd postgresql-10.2```
+    ```
+        cd postgresql-10.2
+    ```
 
-    ```export POST_SRC=`pwd` ```
+    ```
+        export POST_SRC=`pwd` 
+    ```
 
 Run the following commands:
 
-    ``` ./configure --prefix $POST_SRC --without-readline --without-zlib ```
+
+    ``` 
+    ./configure --prefix $POST_SRC --without-readline --without-zlib 
+    ```
 
 
-    ```make```
+    ```
+    make
+    ```
 
 
-    ```make install```
+    ```
+    make install
+    ```
 
 4. Move to the psycopg2 directory:
 
