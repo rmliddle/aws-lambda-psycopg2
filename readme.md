@@ -13,47 +13,31 @@ The package itself can be compiled by the following procedure:
 1. Retrieve relevant source code, here it is for postgresql-10.2 and psycopg2-2.7.4
 but can be replaced with other versions as needed:
 
-    ```wget https://www.postgresql.org/ftp/source/v10.2/postgresql-10.2.tar.gz .```
+    ```wget https://www.postgresql.org/ftp/source/v10.2/postgresql-10.2.tar.gz .````
 
     ```wget http://initd.org/psycopg/tarballs/PSYCOPG-2-7/psycopg2-2.7.4.tar.gz .```
 
 2. Unpack both archives:
   
-    ``` 
-        tar -xvzf /postgresql-10.2.tar.gz
-    ```
+    ```tar -xvzf /postgresql-10.2.tar.gz```
 
-    ```
-        tar -xvzf /psycopg2-2.7.4.tar.gz
-    ```
+    ```tar -xvzf /psycopg2-2.7.4.tar.gz```
 
 
 3. Move into the postgres source directory:
 
-    ```
-        cd postgresql-10.2
-    ```
+    `cd postgresql-10.2`
 
-    ```
-        export POST_SRC=`pwd` 
-    ```
+    ```export POST_SRC=`pwd` ```
+
 
 Run the following commands:
 
+```./configure --prefix $POST_SRC --without-readline --without-zlib```
 
-    ``` 
-    ./configure --prefix $POST_SRC --without-readline --without-zlib 
-    ```
+```make```
 
-
-    ```
-    make
-    ```
-
-
-    ```
-    make install
-    ```
+```make install```
 
 4. Move to the psycopg2 directory:
 
