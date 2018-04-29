@@ -13,7 +13,7 @@ The package itself can be compiled by the following procedure:
 1. Retrieve relevant source code, here it is for postgresql-10.2 and psycopg2-2.7.4
 but can be replaced with other versions as needed:
 
-    ```wget https://www.postgresql.org/ftp/source/v10.2/postgresql-10.2.tar.gz .````
+    ```wget https://www.postgresql.org/ftp/source/v10.2/postgresql-10.2.tar.gz .```
 
     ```wget http://initd.org/psycopg/tarballs/PSYCOPG-2-7/psycopg2-2.7.4.tar.gz .```
 
